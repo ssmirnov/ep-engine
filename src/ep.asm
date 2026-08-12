@@ -1,5 +1,19 @@
 
 
+        ifdef ZXNEXT
+            include "include/zxnext.asm"
+        endif
+        ifdef TSCONF
+            include "include/tsconf.asm"
+        endif
+        ifdef SPRINTER
+            
+        endif
+        ifdef ZX128K
+            
+        endif
+
+
         module ep
 
         ifdef ZXNEXT
@@ -17,7 +31,17 @@
 
 
 ; General
-set_border_color:       equ _set_border_color
+initialize:
+        ep_initialize
+        ret
+
+set_cpu_speed:
+        ep_set_cpu_speed a
+        ret
+
+set_border_color
+        ep_set_border_color a
+        ret
 
 
         endmodule

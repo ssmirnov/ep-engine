@@ -28,9 +28,9 @@ __compiled_code:
 __compiled_code_end:
 __compiled_code_length: equ __compiled_code_end-__compiled_code
 
-        display "Code start: ", __compiled_code
-        display "Code length: ", /D, __compiled_code_length, " bytes"
-        display "Code end: ", __compiled_code_end
+        ;display "Code start: ", __compiled_code
+        ;display "Code length: ", /D, __compiled_code_length, " bytes"
+        ;display "Code end: ", __compiled_code_end
         display "EXE+Code length: ", /D, EXEHeaderLength + __compiled_code_length
 
         if _ERRORS == 0
