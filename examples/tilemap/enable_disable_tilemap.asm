@@ -15,6 +15,7 @@ main:
 
         ; by default: Tilemap page = #05, Tiles page = #05
         ifdef ZXNEXT
+            ; set random tilemap & tiles
             ld hl, 0
             ld de, #5b00
             ld bc, #2500
@@ -23,6 +24,7 @@ main:
 
         ; by default: Tilemap page = #00, Tiles page = #00
         ifdef TSCONF
+            ; set random tilemap & tiles
             ld hl, 0
             ld de, #c000
             ld bc, #4000
