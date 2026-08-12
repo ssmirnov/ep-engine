@@ -32,6 +32,7 @@
 
         module tsconf
             include "tsconf_definitions.asm"
+            include "tsconf_enums.asm"
         endmodule
 
 

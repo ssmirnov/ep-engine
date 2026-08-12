@@ -1,11 +1,4 @@
 
-
-CPU_SPEED_3_5MHZ  equ  SYS_ZCLK3_5
-CPU_SPEED_7MHZ    equ  SYS_ZCLK7
-CPU_SPEED_14MHZ   equ  SYS_ZCLK14
-CPU_SPEED_MAX     equ  CPU_SPEED_14MHZ
-
-
 ; ------- definitions
 
 ; -- TS-config port regs

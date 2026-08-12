@@ -1,12 +1,5 @@
 
 
-CPU_SPEED_3_5MHZ  equ  %00
-CPU_SPEED_7MHZ    equ  %01
-CPU_SPEED_14MHZ   equ  %10
-CPU_SPEED_28MHZ   equ  %11
-CPU_SPEED_MAX     equ  CPU_SPEED_28MHZ
-
-
 ; General
 TBBLUE_REGISTER_SELECT          equ #243b       ; https://wiki.specnext.dev/TBBlue_Register_Select
 TBBLUE_REGISTER_ACCESS          equ #253b       ; https://wiki.specnext.dev/TBBlue_Register_Access

@@ -9,7 +9,8 @@
 
 
         macro ep_set_border_color color?
-            out (#fe), color?
+            ld a, color?
+            out (#fe), a
         endm
 
 

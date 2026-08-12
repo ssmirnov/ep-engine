@@ -31,17 +31,37 @@
 
 
 ; General
+    ifused initialize
 initialize:
         ep_initialize
         ret
+    endif
 
+    ifused set_cpu_speed
 set_cpu_speed:
         ep_set_cpu_speed a
         ret
+    endif
 
-set_border_color
+    ifused set_border_color
+set_border_color:
         ep_set_border_color a
         ret
+    endif
+
+
+; Tilemap
+    ifused tilemap_enable
+tilemap_enable:
+        ep_tilemap_enable
+        ret
+    endif
+
+    ifused tilemap_disable
+tilemap_disable:
+        ep_tilemap_disable
+        ret
+    endif
 
 
         endmodule

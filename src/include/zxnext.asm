@@ -38,6 +38,7 @@
 
         module zxnext
             include "zxnext_definitions.asm"
+            include "zxnext_enums.asm"
         endmodule
 
 

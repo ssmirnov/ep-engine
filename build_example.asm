@@ -1,7 +1,13 @@
 
 
 __entry_point:
-        include "examples/general/set_border_color.asm"
+        ; General
+        ;include "examples/general/set_border_color.asm"
+
+        ; Tilemap
+        include "examples/tilemap/enable_disable_tilemap.asm"
+
+        include "examples/shared.asm"
 
         display "Code start:  ", __entry_point
         display "Code end:    ", $

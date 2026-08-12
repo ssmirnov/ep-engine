@@ -17,12 +17,12 @@
             out (c), a
 
             ; set CPU clock to 14 MHz
-            ep_set_cpu_speed tsconf.CPU_SPEED_14MHZ
+            ep_set_cpu_speed tsconf.CPU_SPEED_MAX
         endm
 
 
         macro ep_set_border_color color?
-            out (#fe), color?
+            tsreg tsconf.BORDER, color?
         endm
 
 
